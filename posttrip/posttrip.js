@@ -14,5 +14,5 @@ document.getElementById('postTripForm').addEventListener('submit', function(even
     // Simulate saving the trip data to a database or local storage
     console.log("Posted Trip:", trip);
     // Redirect to the find_trip.html page
-    window.location.href = "find_trip.html";
+    window.location.href = "ride.html";
   });
