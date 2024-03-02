@@ -9,24 +9,27 @@
 <body>
     <header>
         <h1>InSpot - Post a Trip</h1>
+        <br>
     </header>
-    <main>
+    <div class="container">
+        <br>
         <form id="postTripForm">
-            <label for="startPoint">Starting Point:</label>
+            <br>
+            <label for="startPoint" style="color: white;" >Starting Point:</label>
             <input type="text" id="startPoint" name="startPoint" required>
             
-            <label for="endPoint">End Point:</label>
+            <label for="endPoint" style="color: white;">End Point:</label>
             <input type="text" id="endPoint" name="endPoint" required>
             
-            <label for="tripTime">Start Time:</label>
+            <label for="tripTime" style="color: white;">Start Time:</label>
             <input type="time" id="tripTime" name="tripTime" required><br> <!-- Added line break -->
             
-            <label for="pricePerPerson">Price Per Person:</label><br> <!-- Added line break -->
+            <label for="pricePerPerson" style="color: white;">Price Per Person:</label><br> <!-- Added line break -->
             <input type="number" id="pricePerPerson" name="pricePerPerson" required>
             
-            <button type="submit">Post Trip</button>
+            <button type="submit" style="color: black;">Post Trip</button>
         </form>
-    </main>
+    </div>
     <script src="posttrip.js"></script>
 </body>
 </html>
