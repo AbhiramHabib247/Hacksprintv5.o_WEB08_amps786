@@ -26,3 +26,5 @@ function showMessage(message, className) {
     setTimeout(function() {
         document.querySelector('.' + className).remove();
     }, 3000);
+    window.location.href = "../homepage_after_payment.html";
+  }

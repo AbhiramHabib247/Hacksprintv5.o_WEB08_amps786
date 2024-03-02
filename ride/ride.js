@@ -38,7 +38,7 @@ function displayTemporaryMessageAndRedirect() {
     // Display temporary message
     alert("Thank You for using InSpot for your commuting needs. Your ride is confirmed.");
     // Redirect to homepage
-    window.location.href = "../homepage.html";
+    window.location.href = "../paygateway/paygetway.html";
 }
 
 
