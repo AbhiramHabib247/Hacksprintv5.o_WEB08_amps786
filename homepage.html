@@ -48,10 +48,23 @@
     }
 
     .container {
-      max-width: 800px;
-      padding: 20px;
-      align-self: left; 
-    }
+  max-width: 800px;
+  padding: 20px;
+  align-self: left;
+  animation: fadeInLeft 2s ease; 
+}
+
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px); 
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0); 
+  }
+}
+
 
     p {
       line-height: 1.6;
