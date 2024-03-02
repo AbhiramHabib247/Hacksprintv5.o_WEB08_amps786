@@ -52,8 +52,4 @@ function displayTemporaryMessageAndRedirect() {
     window.location.href = "../homepage.html";
 }
 
-// Add event listeners to select trip buttons
-const selectTripButtons = document.querySelectorAll('.select-trip-btn');
-selectTripButtons.forEach(button => {
-    button.addEventListener('click', displayTemporaryMessageAndRedirect);
-});
+
