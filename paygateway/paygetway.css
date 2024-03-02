@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #3cff00;
+    background-color: #161616;
 }
 
 .container {
@@ -9,12 +9,11 @@ body {
     padding: 20px;
     background-color: #000000;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgb(255, 255, 255);
 }
 
 h1 {
     text-align: center;
-    color: #ffffff;
+    color: #51ff00;
 }
 
 label,
