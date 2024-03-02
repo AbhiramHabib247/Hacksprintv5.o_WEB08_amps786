@@ -25,8 +25,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Redirect to a different page after a delay
     setTimeout(function() {
-      window.location.href = "../homepage_after_signup.html";
-    }, 2000); // 2000 milliseconds = 2 seconds (adjust as needed)
+      window.location.href = "../authentication/authentication.html";
+    }, 1000); // 2000 milliseconds = 2 seconds (adjust as needed)
   });
 });
 
