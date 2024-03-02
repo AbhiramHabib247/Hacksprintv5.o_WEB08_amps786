@@ -1,57 +1,46 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-  
-  header {
-    background-color: #333;
-    color: #fff;
-    padding: 1em;
-    text-align: center;
-  }
-  
-  main {
-    padding: 1em;
-  }
-  
-  nav ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  nav ul li {
-    display: inline;
-    margin-right: 20px;
-  }
-  
-  nav ul li a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-  }
-  
-  /* Form styling */
-  form {
-    margin-bottom: 1em;
-  }
-  
-  input[type="text"],
-  input[type="number"] {
-    width: 100%;
-    padding: 0.5em;
-    margin-bottom: 0.5em;
-  }
-  
-  button {
-    padding: 0.5em 1em;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: #0056b3;
-  }
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  color: white;
+}
+
+header {
+  padding: 20px;
+  text-align: center;
+}
+
+#availableTripsSection {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+}
+
+.trip {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.trip p {
+  margin-bottom: 10px;
+}
+
+.select-trip-btn {
+  background-color: rgb(17, 255, 0);
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.select-trip-btn:hover {
+  background-color: yellow;
+  color: blue;
+}
   

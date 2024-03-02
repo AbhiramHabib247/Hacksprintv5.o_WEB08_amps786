@@ -4,41 +4,30 @@ const postedTrips = JSON.parse(localStorage.getItem('postedTrips')) || [];
 const availableTripsSection = document.getElementById("availableTripsSection");
 
 if (postedTrips.length > 0) {
-    // Create a table element
-    const tripsTable = document.createElement("table");
-    tripsTable.classList.add("trips-table");
-
-    // Create table header
-    const tableHeader = document.createElement("thead");
-    tableHeader.innerHTML = `
-        <tr>
-            <th>Start Point___</th>
-            <th>End Point___ </th>
-            <th>Start Time____</th>
-            <th>Price Per Person  </th>
-        </tr>
-    `;
-    tripsTable.appendChild(tableHeader);
-
-    // Create table body
-    const tableBody = document.createElement("tbody");
-
-    // Display each posted trip in a table row
+    // Display each posted trip
     postedTrips.forEach(trip => {
-        const row = tableBody.insertRow();
-        row.innerHTML = `
-            <td>${trip.startPoint}</td>
-            <td>${trip.endPoint}</td>
-            <td>${trip.tripTime}</td>
-            <td>$${trip.pricePerPerson }</td>
- `;
+        const tripElement = document.createElement("div");
+        tripElement.classList.add("trip");
+
+        // Create trip details text
+        const tripDetails = document.createElement("div");
+        tripDetails.innerHTML = `
+            <p>Start Point: ${trip.startPoint}</p>
+            <p>End Point: ${trip.endPoint}</p>
+            <p>Start Time: ${trip.tripTime}</p>
+            <p>Price Per Person: $${trip.pricePerPerson}</p>
+        `;
+        tripElement.appendChild(tripDetails);
+
+        // Create Select Trip button
+        const selectTripButton = document.createElement("button");
+        selectTripButton.classList.add("select-trip-btn");
+        selectTripButton.textContent = "Select Trip";
+        selectTripButton.addEventListener('click', displayTemporaryMessageAndRedirect);
+        tripElement.appendChild(selectTripButton);
+
+        availableTripsSection.appendChild(tripElement);
     });
-
-    // Append table body to the table
-    tripsTable.appendChild(tableBody);
-
-    // Append the table to the availableTripsSection
-    availableTripsSection.appendChild(tripsTable);
 } else {
     // Display a message if no trips are posted
     availableTripsSection.innerHTML = "<p>No trips posted yet.</p>";
