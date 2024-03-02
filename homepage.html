@@ -39,19 +39,34 @@
       color: blue;
     }
 
-    nav a[href="ride/ride.html"] {
-      background-color: rgb(255, 165, 0);
-    }
+    
 
     nav a[href="posttrip/posttrip.html"] {
       background-color: rgb(255, 165, 0); 
     }
 
-    .container {
-      max-width: 800px;
-      padding: 20px;
-      align-self: left; 
+    nav a[href="ride/ride.html"] {
+      background-color: rgb(255, 165, 0);
     }
+
+    .container {
+  max-width: 800px;
+  padding: 20px;
+  align-self: left;
+  animation: fadeInLeft 2s ease; 
+}
+
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px); 
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0); 
+  }
+}
+
 
     p {
       line-height: 1.6;
@@ -75,8 +90,8 @@
 
   <nav>
     <a href="about.html">About</a>
-    <a href="ride/ride.html">Find a Ride</a>
-    <a href="posttrip/posttrip.html">Post a Ride</a>
+    <a href="posttrip/posttrip.html">Find a Ride</a>
+    <a href="ride/ride.html">Post a Ride</a>
     <a href="contact.html">Contact</a>
     <a style="float: right;" href="signup/signup.html">Sign Up</a>
     <a style="float: right;" href="sign-in.html">Sign In</a>
